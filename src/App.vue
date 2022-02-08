@@ -1,5 +1,6 @@
 <script setup>
-// import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
+
 // import router from './router/index';
 
 </script>
@@ -7,28 +8,27 @@
 <template>
   <header>
     <img
-      alt="Vue logo"
+      alt="Silid Aklatan Logo"
       class="logo"
       src="@/assets/logoSA.png"
       width="80"
 
     />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/books">Bookshelf</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <!-- <a href="#/">Home</a>
-        <a href="#/about">About</a> -->
       </nav>
-
   </header>
+  <div class="container mt-3">
+    <RouterView />
+  </div>
 
-  <RouterView />
 </template>
 
-<style>
+<style lang="css">
 @import "@/assets/base.css";
+
 
 #app {
   max-width: 1280px;
@@ -45,7 +45,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
 
 a,
@@ -101,7 +101,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: calc(var(--section-gap) / 4);
   }
 
   header .wrapper {

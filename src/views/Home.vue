@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    <div>Hello</div>
+    <h1>HOME</h1>
   </main>
 </template>

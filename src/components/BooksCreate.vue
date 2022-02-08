@@ -1,8 +1,14 @@
 <script setup>
+import httpRequest from '../router/httpRequest';
+
+export default {
+}
 
 </script>
 
 <template>
+  <h1>BOOKS CREATE</h1>
+  
   
 </template>
 
